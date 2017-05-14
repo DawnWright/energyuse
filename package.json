@@ -1,0 +1,36 @@
+{
+  "name": "energyuse",
+  "version": "1.0.0",
+  "description": "Query and analyze energy usage data",
+  "main": "index.js",
+  "bin": {
+    "energyuse": "index.js"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawnWright/energyuse.git"
+  },
+  "keywords": [
+    "energy",
+    "CLI"
+  ],
+  "author": "Dawn Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DawnWright/energyuse/issues"
+  },
+  "homepage": "https://github.com/DawnWright/energyuse#readme"
+}
