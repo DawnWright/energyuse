@@ -11,7 +11,7 @@
             "program": "${workspaceRoot}/index.js",
             "args": [
                 "${workspaceRoot}/sample_data/example_homes_data.csv",
-                "peak_usage",
+                "air_conditioner_savings",
                 "white_house"
             ]
         }
