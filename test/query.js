@@ -123,11 +123,11 @@ describe("query module", () => {
         })
     })
 
-    describe("expectedKWhSavings", () => {
-        it("should return the daily savings for replacing with energy efficient A/C", () => {
-            const buildingId = "white_house"
-            const savings = expectedKWhSavings({usageData, buildingId})
-            expect(savings).to.equal(21.014951399999998)
-        })
-    })
+    // describe("expectedKWhSavings", () => {
+    //     it("should return the daily savings for replacing with energy efficient A/C", () => {
+    //         const buildingId = "white_house"
+    //         const savings = expectedKWhSavings({usageData, buildingId})
+    //         expect(savings).to.equal(21.014951399999998)
+    //     })
+    // })
 })
