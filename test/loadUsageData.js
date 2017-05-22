@@ -1,5 +1,5 @@
 const {expect} = require('chai')
-const {parseFileContents, scrub} = require('../lib/loadUsageData')
+const {parseFileContents, scrubData} = require('../lib/loadUsageData')
 
 describe("parseFileContents", () => {
     it("should convert csv format to objects", () => {
@@ -35,13 +35,17 @@ describe("parseFileContents", () => {
         )).to.throw("Invalid usage data: white_house,4.898962")
     })
 
-    describe("scrub", () => {
-        it("test", () => {
-            console.log(scrub([{
-                building_id: "White Opera House",
-                hour: 3,
-                kwh_usage: 3.4,
-            }]))
+    describe("scrubData", () => {
+        it("should scrub the given data into standard format", () => {
+          expect(scrubData([{
+              building_id: "White Opera House",
+              hour: 3,
+              kwh_usage: 3.4,
+          }])).to.eql([{
+              building_id: "white_opera_house",
+              hour: 3,
+              kwh_usage: 3.4,
+          }])
         })
     })
 
